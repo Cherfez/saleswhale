@@ -253,6 +253,24 @@ main {
     width: 167px;
     margin-left: 40%;
   }
+
+  .timeline .timeline-line {
+    margin: 0;
+  }
+  .timeline .timeline-line .line {
+    left: 250px;
+    top: 170.5vh;
+  }
+  .timeline .timeline-line div {
+    padding: 0 3rem;
+  }
+  .timeline .timeline-line div .year {
+    margin-left: 3.35rem;
+    margin-right: 0.5rem;
+  }
+  .timeline .timeline-line div p {
+    width: 400px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -356,5 +374,30 @@ main {
     font-size: 18px;
     line-height: 23px;
     height: 59px;
+  }
+
+  .timeline h2 {
+    font-size: 58px;
+    line-height: 62px;
+    margin-bottom: 80px;
+  }
+  .timeline .timeline-line {
+    padding: 120px 110px;
+  }
+  .timeline .timeline-line .line {
+    left: 381px;
+    top: 217vh;
+    height: 940px;
+  }
+  .timeline .timeline-line div .year {
+    margin-right: 20px;
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .timeline .timeline-line div p {
+    margin-left: 40px;
+    font-size: 26px;
+    line-height: 34px;
+    width: 738px;
   }
 }
