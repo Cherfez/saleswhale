@@ -4,19 +4,23 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 #nav {
-  font-size: 18px;
-  background-color: darkcyan;
-  border: 1px solid darkcyan;
-  padding-bottom: 10px;
+  background-color: white;
+  border-bottom: 1px solid darkcyan;
+  min-height: 3rem;
+  padding: 0 1rem;
 }
 
 .navbar-toggle {
   position: absolute;
-  top: 0;
+  top: 10px;
   right: 20px;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
+  color: darkcyan;
   font-size: 24px;
 }
 
@@ -27,14 +31,50 @@
 
 .main-nav li {
   text-align: center;
-  margin: 15px auto;
-  background-color: darkcyan;
+  margin: 1rem auto;
+  background-color: rgb(255, 255, 255);
 }
 
-.nav-links,
-.logo {
+.nav-links {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+}
+
+.main-nav li .login {
+  background-color: transparent;
+  color: blue;
+  border: solid 1px blue;
+  border-radius: 5px;
+  padding: 0.4rem 0.75rem;
+}
+
+.main-nav li .login a:visited {
+  color: blue;
+}
+
+.main-nav li .demo {
+  background-color: blue;
+  border: solid 1px blue;
+  padding: 0.4rem 0.75rem;
+  border-radius: 5px;
+}
+
+.main-nav li .demo a {
+  color: white;
+}
+
+.main-nav li .demo a:visited {
+  color: white;
+}
+
+.main-nav li .login a,
+.main-nav li .demo a {
+  padding: 0.4rem 0.75rem;
+}
+
+.main-nav li a {
+  text-decoration: none;
 }
 
 .logo {
@@ -51,5 +91,59 @@
 
 .active {
   display: block;
-  background-color: pink;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1440px) {
+  #nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+    font-weight: 500;
+    height: 4rem;
+    border-bottom: none;
+  }
+  .main-nav {
+    display: flex;
+    margin: 10px 2rem 0 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .main-nav li {
+    margin: 0;
+    padding: 0;
+  }
+  .nav-links {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+  .main-nav .login {
+    margin: 0 1rem 0 4rem;
+  }
+  .navbar-toggle {
+    display: none;
+  }
+  .nav-links:hover {
+    color: darkcyan;
+  }
+  .main-nav .login:hover {
+    background-color: blue;
+    transition-duration: 0.3s;
+  }
+  .main-nav li .login a:hover {
+    color: white;
+    transition-duration: 0.3s;
+  }
+  .main-nav li .demo:hover {
+    background-color: white;
+    transition-duration: 0.3s;
+  }
+  .main-nav li .demo a:hover {
+    color: blue;
+    transition-duration: 0.3s;
+  }
 }
