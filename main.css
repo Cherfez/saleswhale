@@ -273,6 +273,46 @@ main {
   width: 100%;
 }
 
+.future {
+  background: #329dfa;
+  height: 377px;
+  margin: 0 -1.5rem;
+  padding: 1.5rem;
+}
+.future h2 {
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 60px;
+  margin-bottom: 3rem;
+}
+.future .future-demo {
+  width: 272px;
+  height: 49px;
+  background: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: block;
+  margin: 1rem auto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+.future .future-cases {
+  width: 272px;
+  height: 49px;
+  display: block;
+  margin: 1rem auto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  background-color: #329dfa;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
 @media (min-width: 768px) {
   main {
     margin: 0 3rem;
@@ -351,6 +391,27 @@ main {
   .investors .investor-card {
     width: 272px;
     height: 145.79px;
+  }
+
+  .future {
+    height: 215px;
+  }
+  .future h2 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .future .future-demo,
+  .future .future-cases {
+    display: inline-block;
+    width: 146px;
+    height: 43px;
+    margin: 1rem 0;
+  }
+  .future .buttons {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
   }
 }
 
@@ -513,5 +574,18 @@ main {
   .investors .investor-card {
     width: 528px;
     height: 283px;
+  }
+
+  .future {
+    height: 398.53px;
+  }
+  .future h2 {
+    font-size: 48px;
+    margin-top: 115px;
+  }
+  .future .future-demo,
+  .future .future-cases {
+    width: 272px;
+    height: 62px;
   }
 }
