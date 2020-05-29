@@ -314,6 +314,74 @@ main {
   border-radius: 5px;
 }
 
+footer {
+  margin: 40px 25px 0 25px;
+}
+footer .footer-logo {
+  display: block;
+  height: 2rem;
+  width: 70%;
+  margin-bottom: 2rem;
+}
+footer .footer-logo img {
+  height: inherit;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .footer-content .footer-why,
+footer .footer-content .footer-product,
+footer .footer-content .footer-company,
+footer .footer-content .footer-contact {
+  width: 45%;
+  line-height: 30px;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+footer .footer-content .footer-why h6,
+footer .footer-content .footer-product h6,
+footer .footer-content .footer-company h6,
+footer .footer-content .footer-contact h6 {
+  font-size: 18px;
+  padding: 0.75rem 0;
+}
+footer .footer-content .footer-why a,
+footer .footer-content .footer-product a,
+footer .footer-content .footer-company a,
+footer .footer-content .footer-contact a {
+  color: #002240;
+  text-decoration: none;
+}
+footer .footer-other {
+  background: #f4f4f4;
+  margin: 0 -25px;
+  padding: 25px;
+  text-align: center;
+}
+footer .footer-other svg {
+  margin: 10px;
+}
+footer .footer-other a {
+  color: #002240;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  display: block;
+  height: 43px;
+  text-decoration: none;
+}
+footer .footer-other p {
+  font-size: 14px;
+  line-height: 32px;
+  color: #002240;
+  width: 272px;
+  height: 31px;
+  margin: 0 auto;
+}
+
 @media (min-width: 768px) {
   main {
     margin: 0 3rem;
@@ -416,6 +484,28 @@ main {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
+  }
+
+  footer {
+    /* padding: 50px 70px 0 70px; */
+    margin: 50px 70px 0 70px;
+  }
+  footer .footer-logo {
+    display: inline-block;
+    width: 30%;
+  }
+  footer .footer-content {
+    margin-left: 35%;
+    margin-top: -4.5rem;
+  }
+  footer .footer-content .footer-why,
+  footer .footer-content .footer-product,
+  footer .footer-content .footer-company,
+  footer .footer-content .footer-contact {
+    width: 40%;
+  }
+  footer .footer-other {
+    margin: 0 -70px;
   }
 }
 
@@ -584,5 +674,12 @@ main {
   .future .future-cases {
     width: 272px;
     height: 62px;
+  }
+
+  footer .footer-content .footer-why,
+  footer .footer-content .footer-product,
+  footer .footer-content .footer-company,
+  footer .footer-content .footer-contact {
+    width: 20%;
   }
 }
