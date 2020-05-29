@@ -504,6 +504,9 @@ footer .footer-other p {
   footer .footer-content .footer-contact {
     width: 40%;
   }
+  footer .footer-other {
+    margin: 0 -70px;
+  }
 }
 
 @media (min-width: 1440px) {
