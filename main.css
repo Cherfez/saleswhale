@@ -315,8 +315,7 @@ main {
 }
 
 footer {
-  width: 100%;
-  padding: 40px 25px 0 25px;
+  margin: 40px 25px 0 25px;
 }
 footer .footer-logo {
   display: block;
@@ -353,8 +352,34 @@ footer .footer-content .footer-why a,
 footer .footer-content .footer-product a,
 footer .footer-content .footer-company a,
 footer .footer-content .footer-contact a {
-  color: black;
+  color: #002240;
   text-decoration: none;
+}
+footer .footer-other {
+  background: #f4f4f4;
+  margin: 0 -25px;
+  padding: 25px;
+  text-align: center;
+}
+footer .footer-other svg {
+  margin: 10px;
+}
+footer .footer-other a {
+  color: #002240;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  display: block;
+  height: 43px;
+  text-decoration: none;
+}
+footer .footer-other p {
+  font-size: 14px;
+  line-height: 32px;
+  color: #002240;
+  width: 272px;
+  height: 31px;
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
@@ -462,7 +487,8 @@ footer .footer-content .footer-contact a {
   }
 
   footer {
-    padding: 50px 70px 0 70px;
+    /* padding: 50px 70px 0 70px; */
+    margin: 50px 70px 0 70px;
   }
   footer .footer-logo {
     display: inline-block;
