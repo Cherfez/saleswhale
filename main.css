@@ -8,9 +8,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --nav-color: darkcyan;
+  --white-color: #fff;
+  --dark-blue: #002240;
+  --light-blue: blue;
+}
+
 #nav {
-  background-color: white;
-  border-bottom: 1px solid darkcyan;
+  background-color: var(--white-color);
+  border-bottom: 1px solid var(--nav-color);
   min-height: 3rem;
   padding: 0 1rem;
 }
@@ -20,7 +27,7 @@ body {
   top: 10px;
   right: 20px;
   cursor: pointer;
-  color: darkcyan;
+  color: var(--nav-color);
   font-size: 24px;
 }
 
@@ -32,7 +39,7 @@ body {
 .main-nav li {
   text-align: center;
   margin: 1rem auto;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white-color);
 }
 
 .nav-links {
@@ -41,31 +48,29 @@ body {
   padding: 1rem;
 }
 
+.main-nav li .login,
+.main-nav li .demo {
+  border: solid 1px var(--light-blue);
+  padding: 0.4rem 0.75rem;
+  border-radius: 5px;
+}
+
 .main-nav li .login {
   background-color: transparent;
-  color: blue;
-  border: solid 1px blue;
-  border-radius: 5px;
-  padding: 0.4rem 0.75rem;
+  color: var(--light-blue);
 }
 
 .main-nav li .login a:visited {
-  color: blue;
+  color: var(--light-blue);
 }
 
 .main-nav li .demo {
-  background-color: blue;
-  border: solid 1px blue;
-  padding: 0.4rem 0.75rem;
-  border-radius: 5px;
+  background-color: var(--light-blue);
 }
 
-.main-nav li .demo a {
-  color: white;
-}
-
+.main-nav li .demo a,
 .main-nav li .demo a:visited {
-  color: white;
+  color: var(--white-color);
 }
 
 .main-nav li .login a,
@@ -108,19 +113,19 @@ main {
 .vision h1 {
   font-size: 32px;
   padding-bottom: 0.5rem;
-  color: #002240;
+  color: var(--dark-blue);
 }
 .vision p {
   line-height: 24px;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-  color: #002240;
+  color: var(--dark-blue);
 }
 
 .culture h2 {
   font-size: 28px;
   margin-bottom: 1rem;
-  color: #002240;
+  color: var(--dark-blue);
 }
 .culture p {
   font-size: 16px;
@@ -137,16 +142,16 @@ main {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 0.75rem;
-  color: #002240;
+  color: var(--dark-blue);
 }
 .culture .culture-followUp {
-  color: #002240;
+  color: var(--dark-blue);
   margin-top: 2rem;
 }
 .culture button {
   width: 100%;
   background: #0688fa;
-  color: #fff;
+  color: var(--white-color);
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -167,7 +172,7 @@ main {
   margin-top: 2rem;
   height: 30px;
   font-weight: bold;
-  color: #002240;
+  color: var(--dark-blue);
 }
 .timeline .timeline-line {
   background: #eff8ff;
@@ -214,13 +219,13 @@ main {
 .offices h2 {
   font-size: 28px;
   text-align: center;
-  color: #002240;
+  color: var(--dark-blue);
   margin-bottom: 20px;
 }
 .offices .card {
   width: 271px;
   height: 199px;
-  background: #ffffff;
+  background: var(--white-color);
   border: 1px solid #e5e5e5;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
@@ -242,13 +247,13 @@ main {
   font-weight: bold;
   font-size: 26px;
   line-height: 34px;
-  color: #002240;
+  color: var(--dark-blue);
   height: 42px;
 }
 .offices .card p {
   font-size: 16px;
   line-height: 24px;
-  color: #002240;
+  color: var(--dark-blue);
 }
 
 .investors h2 {
@@ -260,7 +265,7 @@ main {
 .investors .investor-card {
   width: 272px;
   height: 145.79px;
-  background: #ffffff;
+  background: var(--white-color);
   border: 1px solid #e5e5e5;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
@@ -284,14 +289,14 @@ main {
   font-size: 32px;
   line-height: 40px;
   text-align: center;
-  color: #ffffff;
+  color: var(--white-color);
   margin-top: 60px;
   margin-bottom: 3rem;
 }
 .future .future-demo {
   width: 272px;
   height: 49px;
-  background: #ffffff;
+  background: var(--white-color);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   display: block;
@@ -309,8 +314,8 @@ main {
   font-size: 18px;
   line-height: 23px;
   background-color: #329dfa;
-  color: #fff;
-  border: 1px solid #fff;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
   border-radius: 5px;
 }
 
@@ -352,7 +357,7 @@ footer .footer-content .footer-why a,
 footer .footer-content .footer-product a,
 footer .footer-content .footer-company a,
 footer .footer-content .footer-contact a {
-  color: #002240;
+  color: var(--dark-blue);
   text-decoration: none;
 }
 footer .footer-other {
@@ -365,7 +370,7 @@ footer .footer-other svg {
   margin: 10px;
 }
 footer .footer-other a {
-  color: #002240;
+  color: var(--dark-blue);
   font-weight: bold;
   font-size: 16px;
   line-height: 32px;
@@ -376,7 +381,7 @@ footer .footer-other a {
 footer .footer-other p {
   font-size: 14px;
   line-height: 32px;
-  color: #002240;
+  color: var(--dark-blue);
   width: 272px;
   height: 31px;
   margin: 0 auto;
@@ -458,7 +463,6 @@ footer .footer-other p {
   .investors .investor-cards {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
   }
   .investors .investor-card {
     width: 272px;
@@ -487,7 +491,6 @@ footer .footer-other p {
   }
 
   footer {
-    /* padding: 50px 70px 0 70px; */
     margin: 50px 70px 0 70px;
   }
   footer .footer-logo {
@@ -681,5 +684,7 @@ footer .footer-other p {
   footer .footer-content .footer-company,
   footer .footer-content .footer-contact {
     width: 20%;
+    font-size: 18px;
+    line-height: 42px;
   }
 }
